@@ -300,4 +300,36 @@ public class Solution {
 
 ##Write a program to reverse a string except the special characters
 ````java[]
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
+        char[] arr = str.toCharArray();
+        int i = 0, j = arr.length - 1;
+
+        while (i < j) {
+            if (!Character.isLetter(arr[i])) {
+                i++;
+            } else if (!Character.isLetter(arr[j])) {
+                j--;
+            } else {
+                // Swap letters
+                char temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                i++;
+                j--;
+            }
+        }
+
+        System.out.println(new String(arr));
+    }
+}
+````
+
+##Write a program to reverse a string except the special characters
+````java[]
 
