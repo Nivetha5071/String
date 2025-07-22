@@ -1,0 +1,11 @@
+1. Without using len keyword:
+
+#include <stdio.h>
+int main() {
+ char str[100];                           output:                                        
+ scanf("%s",str);                            hello
+ int i;                                      5
+ for(i=0;str[i];i++);
+    printf("%d",i);
+    return 0;
+}
