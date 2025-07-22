@@ -101,4 +101,203 @@ output:
  hello 
 hello
 ````
+##Write a program to count the number of upper-case characters in a given string
+````java[]
+Sample Input: 
+BeauTIfull Life
+Sample Output:
+4
+
+import java.io.*;
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        str = str.replaceAll("[^A-Z]","");
+        System.out.print(str.length());
+    }
+}
+output:
+````
+
+##Write a program to count the special characters in the given string
+
+````java[]
+Sample Input:
+togy@#123
+Sample Output:
+2
+
+import java.io.*;
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        str = str.replaceAll("[a-z0-9]","");
+        System.out.print(str.length());
+    }
+}
+````
+
+## Write a program to find the length of the string without using in-built function
+````java[]
+Sample Input: 
+i like apple
+Sample Output:
+12
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        char[] arr = str.toCharArray();
+        int i=0;
+        try{
+            for(i=0;;i++){
+                char ch = arr[i];
+            }
+        }
+        catch(Exception e){
+            System.out.println(i);
+        }
+    }
+}
+````
+##Write a program to replace all vowels with spaces
+Sample Input
+Replace all vowels 
+Sample Output 
+R pl c   ll v w ls 
+
+````java[]
+import java.io.*;
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        str = str.replaceAll("['a','e','o','i','u']"," ");
+        System.out.println(str);
+    }
+}
+````
+
+##Write a program to search for a character in a string
+Sample Input1:
+p
+apple
+Sample Output
+Present
+Sample Input2:
+f
+Myslate
+Sample Output
+Not Present
+````java[]
+import java.io.*;
+import java.util.*;
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);
+        String str = sc.next();
+       if (str.indexOf(ch) != -1){
+            System.out.println("Present");
+        }else{
+            System.out.println("Not Present");
+        }
+    }
+}
+````
+##Write a program to accept the string and rotate the string n times
+
+````java[]
+import java.util.*;
+
+public class RotateString {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();     
+        String str = sc.next();  
+        int len = str.length();
+        n = n % len; 
+        String rotated = str.substring(n) + str.substring(0, n);
+        System.out.println(rotated);
+    }
+}
+````
+##Write a program to accept the string from the user and display the string in the password format without making any change in the input array
+````java[]
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        str = str.replaceAll("[a-zA-Z0-9]","*");
+        str = str.replaceAll("[^a-zA-Z0-9]","*");
+        System.out.println(str);
+    }
+}
+````
+##Write a program to convert the digits of the string into a single number
+````java[]
+mport java.util.*;
+
+public class Solution {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        str = str.replaceAll("[^0-9]", "");
+        if (str.isEmpty()) {
+            System.out.println(0);
+        } else {
+            System.out.println(str);
+        }
+    }
+}
+````
+
+##Write a program to reverse a given string without using in-built functions
+````java[]
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        StringBuffer str1= new StringBuffer();
+        str1.append(str);
+        str1= str1.reverse();
+        System.out.println(str1);
+    }
+}
+
+````
+
+##Write a program to reverse a string except the special characters
+````java[]
 
