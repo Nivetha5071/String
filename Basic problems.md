@@ -329,5 +329,34 @@ public class Main {
     }
 }
 ````
+##To check whether the given is Anagram or not
+````java[]
+package STRING;
+import java.util.*;
+public class program3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str1 = sc.nextLine();
+		String str2 = sc.nextLine();
+		int [] dp = new int[26];
+		for(int i=0;i<str1.length();i++) {
+			dp[str1.charAt(i)-'a']++;
+		}
+		for(int i=0;i<str1.length();i++) {
+			dp[str2.charAt(i)-'a']--;
+	}
+		for(int i=0;i<26;i++) {
+			if(dp[i]!=0) {
+				System.out.println("Not an anagram");
+				return;
+			}
+			
+		}
+		System.out.println("Anagram");
+
+     }
+}
+````
 
 
