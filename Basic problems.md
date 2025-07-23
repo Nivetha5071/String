@@ -1,4 +1,4 @@
- ##Without using len keyword
+ ##01.Without using len keyword
  ````java[]
 
 #include <stdio.h>
@@ -11,7 +11,8 @@ int main() {
     return 0;
 }
 ````
-##Valid parenthesis
+
+##02.Valid parenthesis
 ````java[]
 import java.util.*;
 
@@ -39,7 +40,7 @@ output:
 Valid
 ````
 
-##ValueOf()
+##03.ValueOf()
 ````java[]
 
 import java.util.*;
@@ -61,7 +62,7 @@ output:
 a
 ````
 
-##StingBuffer()
+##04.StingBuffer
 ````java[]
 import java.util.*;
 
@@ -82,7 +83,7 @@ output:
 heeohelohi
 ````
 
-##Trim()
+##05.Trim()
 ````java[]
 import java.util.*;
 
@@ -101,7 +102,7 @@ output:
  hello 
 hello
 ````
-##Write a program to count the number of upper-case characters in a given string
+##06.Write a program to count the number of upper-case characters in a given string
 ````java[]
 Sample Input: 
 BeauTIfull Life
@@ -122,7 +123,7 @@ public class Solution {
 output:
 ````
 
-##Write a program to count the special characters in the given string
+##07.Write a program to count the special characters in the given string
 
 ````java[]
 Sample Input:
@@ -143,7 +144,7 @@ public class Solution {
 }
 ````
 
-## Write a program to find the length of the string without using in-built function
+## 08.Write a program to find the length of the string without using in-built function
 ````java[]
 Sample Input: 
 i like apple
@@ -174,7 +175,7 @@ public class Solution {
     }
 }
 ````
-##Write a program to replace all vowels with spaces
+##09.Write a program to replace all vowels with spaces
 Sample Input
 Replace all vowels 
 Sample Output 
@@ -194,7 +195,7 @@ public class Solution {
 }
 ````
 
-##Write a program to search for a character in a string
+##10.Write a program to search for a character in a string
 Sample Input1:
 p
 apple
@@ -222,7 +223,7 @@ public class Solution {
     }
 }
 ````
-##Write a program to accept the string and rotate the string n times
+##W11.rite a program to accept the string and rotate the string n times
 
 ````java[]
 import java.util.*;
@@ -239,7 +240,7 @@ public class RotateString {
     }
 }
 ````
-##Write a program to accept the string from the user and display the string in the password format without making any change in the input array
+##12.Write a program to accept the string from the user and display the string in the password format without making any change in the input array
 ````java[]
 import java.io.*;
 import java.util.*;
@@ -258,7 +259,7 @@ public class Solution {
     }
 }
 ````
-##Write a program to convert the digits of the string into a single number
+##13.Write a program to convert the digits of the string into a single number
 ````java[]
 mport java.util.*;
 
@@ -276,7 +277,7 @@ public class Solution {
 }
 ````
 
-##Write a program to reverse a given string without using in-built functions
+##14.Write a program to reverse a given string without using in-built functions
 ````java[]
 import java.io.*;
 import java.util.*;
@@ -298,7 +299,7 @@ public class Solution {
 
 ````
 
-##Write a program to reverse a string except the special characters
+##16.Write a program to reverse a string except the special characters
 ````java[]
 import java.util.*;
 
@@ -329,7 +330,7 @@ public class Main {
     }
 }
 ````
-##To check whether the given is Anagram or not
+##17.To check whether the given is Anagram or not
 ````java[]
 package STRING;
 import java.util.*;
